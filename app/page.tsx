@@ -78,15 +78,15 @@ export default function Home() {
               <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <div className="grid grid-cols-3 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">5+</div>
+                    <div className="text-2xl font-bold text-blue-600">8+</div>
                     <div className="text-sm text-gray-500">Years Experience</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-green-600">50+</div>
+                    <div className="text-2xl font-bold text-green-600">20+</div>
                     <div className="text-sm text-gray-500">Projects</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-purple-600">98%</div>
+                    <div className="text-2xl font-bold text-purple-600">75%</div>
                     <div className="text-sm text-gray-500">Lighthouse Score</div>
                   </div>
                 </div>
@@ -134,6 +134,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* SECTION B: SKILLS DEMONSTRATION */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <span className="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-sm font-medium mb-4">
+                Proof of Concept
+              </span>
+              <h2 className="text-3xl font-bold mb-4">FinTech Trading Platform</h2>
+              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Demonstrating technical capabilities for real-time financial systems
+              </p>
+            </div>
+            {/* <TradingPlatformCard /> */}
+          </div>
+        </section>
     </div>
   );
 }
