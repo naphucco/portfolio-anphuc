@@ -1,6 +1,7 @@
 import { ArrowRight, Code, Cpu, Zap } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import FeaturedProjects from "./components/FeaturedProjects";
+// import TradingPlatformCard from "./components/TradingPlatformCard";
 
 export default function Home() {
   return (
@@ -82,7 +83,7 @@ export default function Home() {
                     <div className="text-sm text-gray-500">Years Experience</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-green-600">20+</div>
+                    <div className="text-2xl font-bold text-green-600">15+</div>
                     <div className="text-sm text-gray-500">Projects</div>
                   </div>
                   <div className="text-center">
@@ -96,64 +97,29 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Featured Project Preview */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-16">
+      {/* Featured Projects Section */}
+      <FeaturedProjects />
+      
+      {/* FinTech Skills Demonstration */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Work</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-bold">Fire Safety Dashboard</h3>
-                <span className="px-3 py-1 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded-full text-sm">
-                  Performance Case Study
-                </span>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Optimized dashboard load time from <span className="line-through">2+ minutes</span> to{" "}
-                <span className="font-bold text-green-600">under 3 seconds</span>. Implemented lazy loading, 
-                code splitting, and optimized rendering for complex interactive charts.
-              </p>
-              <div className="flex gap-2 mb-4">
-                {["Next.js", "TypeScript", "Chart.js", "Vercel"].map((tech) => (
-                  <span 
-                    key={tech}
-                    className="px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <Link 
-                href="/projects/ekonect-dashboard" 
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-              >
-                View case study
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </div>
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-sm font-medium mb-4">
+              Proof of Concept
+            </span>
+            <h2 className="text-3xl font-bold mb-4">FinTech Trading Platform</h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Demonstrating technical capabilities for real-time financial systems
+            </p>
           </div>
+          {/* <TradingPlatformCard /> */}
         </div>
       </section>
-      {/* SECTION B: SKILLS DEMONSTRATION */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <span className="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-sm font-medium mb-4">
-                Proof of Concept
-              </span>
-              <h2 className="text-3xl font-bold mb-4">FinTech Trading Platform</h2>
-              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Demonstrating technical capabilities for real-time financial systems
-              </p>
-            </div>
-            {/* <TradingPlatformCard /> */}
-          </div>
-        </section>
     </div>
   );
 }
 
-// Tech stack icons (using emoji for simplicity, can replace with actual icons)
+// Tech stack icons
 const techStack = [
   { name: "React", icon: "⚛️" },
   { name: "Next.js", icon: "▲" },
